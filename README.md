@@ -1,5 +1,6 @@
 # WebCourse2  
-##My original github repository got messed up so here are all the dates of when each folder was completed
+## My original github repository got messed up so here are all the dates of when each folder was completed  
+
 Work timeline  
 CVWebsite Start of Web Course to October 5th (Html and CSS)  
 Find A fight October 5th to 10th (BootStrap)  
