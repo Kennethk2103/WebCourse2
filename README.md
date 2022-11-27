@@ -8,5 +8,3 @@ Find a fight with express 23rd to 31rst (Node.js + Express.js)
 Break to work on SQL 31rst - november 7th
 EJS november 7th to november 13th
 DataBases 13th to 20th
-Restfull Api 20th to 27th
-
