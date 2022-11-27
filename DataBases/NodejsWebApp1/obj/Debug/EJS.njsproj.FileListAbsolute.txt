@@ -1,0 +1,3 @@
+C:\Users\Kenny\Documents\GitHub\WebCourse\DataBases\NodejsWebApp1\obj\Debug\EJS.njsproj.AssemblyReference.cache
+C:\Users\Kenny\Documents\GitHub\WebCourse\DataBases\NodejsWebApp1\obj\Debug\EJS.njsproj.CoreCompileInputs.cache
+C:\Users\Kenny\Documents\GitHub\WebCourse\DataBases\NodejsWebApp1\bin\Microsoft.NodejsTools.WebRole.dll
