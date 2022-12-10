@@ -12,3 +12,4 @@ DataBases 13th to 20th (SQL + MongoDB)
 Rest API 20th to 27th  
 Encryption 28th - December 4rth  
 React 5th - 10th  
+Typescript is something i just wanted to try out with react, isnt apart of the webcourse itself
