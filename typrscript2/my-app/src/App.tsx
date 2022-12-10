@@ -57,7 +57,9 @@ function App() {
   }
   function handleClick(){
     count2++;
-    count3=count3+.1;
+    if(count3<1){
+      count3=count3+.1;
+    }
     for(let i=0;i<count2;i++){
       var audio = new Audio('https://cdn.pixabay.com/download/audio/2022/03/09/audio_b6bb9866ac.mp3?filename=glitch-sound-static-noise-30279.mp3');
       audio.volume=count3;
