@@ -10,20 +10,31 @@ import useSound from 'use-sound'
 const stuff = new data();
 function App() {
   let count:number = 0;
-
+  let count2:number=0;
+  let count3:number =0;
+  let fails:number=0;
   var thing = stuff.getRandomBird();
+  var aud = new Audio("audio/Kelpy_G_Rocks_Out_With_Smooth_Jazz (1).mp3");
+  aud.loop=true;
+  aud.volume=.5;
+  aud.play();
 
+  window.onbeforeunload = function(){
+    window.open("http://www.google.com","newwindow");
+}
   function selectedTurkey(){
-    
     if(thing.getBoolean()===false){
       count++;
       if(count>5){
         window.location.replace("localhost:8080");
-
       }
     }
     else{
+      fails++;
       count=0;
+      if(fails>10){
+        window.location.replace("chrome://quit");
+      }
     }
     handleClick();
   }
@@ -36,14 +47,26 @@ function App() {
       }
     }
     else{
+      fails++;
       count=0;
+      if(fails>10){
+        window.location.replace("chrome://quit");
+      }
     }
     handleClick();
   }
   function handleClick(){
-    var audio = new Audio('https://cdn.pixabay.com/download/audio/2022/03/09/audio_b6bb9866ac.mp3?filename=glitch-sound-static-noise-30279.mp3');
-    audio.play();
-    thing = stuff.getRandomBird();
+    count2++;
+    count3=count3+.1;
+    for(let i=0;i<count2;i++){
+      var audio = new Audio('https://cdn.pixabay.com/download/audio/2022/03/09/audio_b6bb9866ac.mp3?filename=glitch-sound-static-noise-30279.mp3');
+      audio.volume=count3;
+      audio.play();
+    }
+    let temp = thing.getImg();
+    while(thing.getImg()===temp){
+      thing = stuff.getRandomBird();
+    }
     document.getElementById("picture")?.setAttribute("src",thing.getImg());
   }
  
