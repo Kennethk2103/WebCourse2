@@ -17,6 +17,11 @@ export default class data{
         this.arr[7]=(new bird("https://imgs.search.brave.com/i03mCm1b4QQrmb2_O-xjMBb6uVJUppbkU-xpjzBcVtg/rs:fit:1200:1071:1/g:ce/aHR0cHM6Ly8zLmJw/LmJsb2dzcG90LmNv/bS8tLVhBM2lNdmFK/TFkvVHdfR3lrUHMt/ZUkvQUFBQUFBQUFF/Z1UvRW1GS1M3Q3o1/eFEvczE2MDAvRHVj/ay0wNC5qcGc",true));
         this.arr[8]=(new bird("https://imgs.search.brave.com/i1aULgQ72tpV4OkbOqyJ1JimgjryT8ue35XPZdW9iH4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/Z2FubmV0dC1jZG4u/Y29tLy1tbS0vOWQ3/ODA1ODJhMGE0NmMy/ZTNiYWRmNTE2YmNi/M2UwODYxMjk2NDll/OC9jPTAtMjY1LTMw/MDAtMTk1My9sb2Nh/bC8tL21lZGlhL0Jp/bmdoYW10b24vMjAx/NS8wNC8wOS9COTMx/NjkxOTc0OFouMV8y/MDE1MDQwOTEzMTQ0/NF8wMDBfRzFJQUY2/N1FTLjEtMC5qcGc_/d2lkdGg9MzIwMCZo/ZWlnaHQ9MTY4MCZm/aXQ9Y3JvcA",true));
         this.arr[9]=(new bird("https://imgs.search.brave.com/qfU-c1-z5H5BBa0iLYwSrbVHO4Tx9PN2ZXsa5CWRsZw/rs:fit:1200:1151:1/g:ce/aHR0cHM6Ly8xLmJw/LmJsb2dzcG90LmNv/bS8tVWNySkdURWVp/LU0vWFE3eEstYWQw/Z0kvQUFBQUFBQUE0/YkEvd2o1dWxWTTJY/MWt0RmsyN01oRTNL/Z1VGX3pISEx5ZkpR/Q0s0QkdBWVlDdy9z/MTYwMC9EU0NOMjQ3/Ny5qcGc",true));
+        this.arr[10]=(new bird("https://blog.fromjapan.co.jp/en/wp-content/uploads/2020/12/Screenshot-2020-12-09-at-16.26.05.jpg",true));
+        this.arr[11]=(new bird("https://imgs.search.brave.com/rrEuE7b0sgCgUVf_RSKy9n32qtdfOKiDIW03slrSElw/rs:fit:1200:1067:1/g:ce/aHR0cHM6Ly8yLmJw/LmJsb2dzcG90LmNv/bS8tMkY5TldDVzBi/V0kvVUZGMnJNdFQ3/M0kvQUFBQUFBQUFR/TGMveUxsbUg4Mm9s/eGsvczE2MDAvQ2hp/Y2tlbjMuanBn",false));
+        this.arr[12]=(new bird("https://imgs.search.brave.com/gvq4JGlbfBCh_TK_6Vhbvp5Xx1EFVP6yEsltOKa8-Ak/rs:fit:1024:993:1/g:ce/aHR0cHM6Ly9ibG9n/LmZyb21qYXBhbi5j/by5qcC9lbi93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMC8xMi9T/Y3JlZW5zaG90LTIw/MjAtMTItMDktYXQt/MTUuNTguNDktMTAy/NHg5OTMuanBn",true));
+   
+   
     }
     getRandomBird(){
         let num:number=Math.floor(Math.random()*this.arr.length);

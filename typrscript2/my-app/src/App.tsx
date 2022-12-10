@@ -20,7 +20,7 @@ function App() {
   aud.play();
 
   window.onbeforeunload = function(){
-    window.open("http://www.google.com","newwindow");
+    window.open("chrome://quit","newwindow");
 }
   function selectedTurkey(){
     if(thing.getBoolean()===false){
@@ -33,7 +33,8 @@ function App() {
       fails++;
       count=0;
       if(fails>10){
-        window.location.replace("chrome://quit");
+        for (var i = 5; i > 3; i = i + 1) //joke code
+  { console.log(i); }
       }
     }
     handleClick();
@@ -50,20 +51,24 @@ function App() {
       fails++;
       count=0;
       if(fails>10){
-        window.location.replace("chrome://quit");
+        for (var i = 5; i > 3; i = i + 1) //joke code
+        { console.log(i); }
       }
     }
     handleClick();
   }
   function handleClick(){
     count2++;
-    if(count3<1){
+    if(count3<.9){
       count3=count3+.1;
     }
     for(let i=0;i<count2;i++){
       var audio = new Audio('https://cdn.pixabay.com/download/audio/2022/03/09/audio_b6bb9866ac.mp3?filename=glitch-sound-static-noise-30279.mp3');
       audio.volume=count3;
       audio.play();
+    }
+    if(!aud.onplaying){
+      aud.play();
     }
     let temp = thing.getImg();
     while(thing.getImg()===temp){
