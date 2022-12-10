@@ -10,8 +10,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App />
+    <audio src="public/audio/Kelpy_G_Rocks_Out_With_Smooth_Jazz (1).mp3"  ></audio>
   </React.StrictMode>
 );
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
