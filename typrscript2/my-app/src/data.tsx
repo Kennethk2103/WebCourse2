@@ -19,7 +19,9 @@ export default class data{
         this.arr[9]=(new bird("https://imgs.search.brave.com/qfU-c1-z5H5BBa0iLYwSrbVHO4Tx9PN2ZXsa5CWRsZw/rs:fit:1200:1151:1/g:ce/aHR0cHM6Ly8xLmJw/LmJsb2dzcG90LmNv/bS8tVWNySkdURWVp/LU0vWFE3eEstYWQw/Z0kvQUFBQUFBQUE0/YkEvd2o1dWxWTTJY/MWt0RmsyN01oRTNL/Z1VGX3pISEx5ZkpR/Q0s0QkdBWVlDdy9z/MTYwMC9EU0NOMjQ3/Ny5qcGc",true));
     }
     getRandomBird(){
-        return this.arr[Math.floor(Math.random()*this.arr.length+1)]
+        let num:number=Math.floor(Math.random()*this.arr.length);
+        console.log(num);
+        return this.arr[num];
     }
 
 
